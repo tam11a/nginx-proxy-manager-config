@@ -22,9 +22,8 @@ services:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
 
-    environment:
-      INITIAL_ADMIN_EMAIL: ibrahimsadiktamim@gmail.com
-      INITIAL_ADMIN_PASSWORD: sudo12riothomas
+    env_file:
+      - .env
 
 networks:
   npm_network:
