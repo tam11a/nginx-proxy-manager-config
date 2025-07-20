@@ -4,4 +4,9 @@ To connect docker containers to the Nginx Proxy Manager network, use the followi
 
 ```bash
 docker network connect <container_name> nginx-proxy-manager_default
+
+# or,
+
+make connect-network container=<container_name>
+
 ```
